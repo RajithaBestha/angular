@@ -1,0 +1,10 @@
+ /*   table,thead,th,td{
+    border: solid 2px;
+    border-collapse: collapse;
+}
+thead{
+    text-align: center;
+    font-size:20px;
+    column-span: all;
+    
+}*/

@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular1';
+  title = 'Welcome to Simplify';
+  first="Rajitha";
+  className="redcolor"
+  
 }

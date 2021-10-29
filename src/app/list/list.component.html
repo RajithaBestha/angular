@@ -1,0 +1,61 @@
+<p>list works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="">
+     <h1>Registration Form</h1>
+    <p> Name:
+        <input type="text" name="Name" [(ngModel)]="empObj.name" (keyup)="ontypeId($event)" (keydown)="ontypeId($event)">
+    </p>
+    <p>age:   
+        <input type="text" name="age"[(ngModel)]="empObj.age" >
+
+    </p>
+    <p>city:
+        <input type="text" name="city" [(ngModel)]="empObj.city">
+
+    </p>
+    <p>
+        <button *ngIf="!isEdit" (click)="submit()">submit</button>
+        <button *ngIf="isEdit" (click)="update()">Update</button>
+
+        
+    </p>
+    
+</form>
+<table class="table1">
+    <thead id="header">Student Details</thead>
+    <tbody>
+        <tr>
+         <th>index</th>     
+        <th>Name</th>
+        <th>Age</th>
+        <th>city</th>
+        </tr>
+        <tr *ngFor= "let empObj of empArr; let ind =index">
+            <td>{{ind}}</td>
+            <td>{{empObj.name}}</td>
+            <td>{{empObj.age}}</td>
+            <td>{{empObj.city}}</td>
+            &nbsp;&nbsp;
+            <td>
+                <button  *ngIf="!isEdit" (click)="edit(ind)">Edit</button>
+         </td>
+            &nbsp;&nbsp;  
+
+            <td>
+                <button (click)="delete(ind)">Delete</button>
+            </td>
+        </tr>
+            </tbody>
+</table>
+   
+
+  </body>
+</html>

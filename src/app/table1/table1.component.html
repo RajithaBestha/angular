@@ -1,0 +1,20 @@
+
+    <table class="table1">
+        <thead>Student Details</thead>
+        <tbody>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>branch</th>
+            </tr>
+            <tr  *ngFor="let empObj of empArr1">
+                <td>{{empObj.name}}</td>
+                <td>{{empObj.age}}</td>
+                <td>{{empObj.branch}}</td>
+            </tr>
+
+        </tbody>
+    </table>
+
+{{parentData}}
+

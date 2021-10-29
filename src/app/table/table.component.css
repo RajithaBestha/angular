@@ -1,0 +1,19 @@
+
+
+    
+    
+
+table,thead,th,td{
+    border: 2px rgb(255, 0, 157) solid ;
+    border-collapse: collapse;
+    text-align: center;
+    
+
+    
+}
+thead{
+ color: brown;
+ font-size: 30px;
+ text-align: center;
+
+}
